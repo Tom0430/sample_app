@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   def create
   	post = Post.new(post_params)
   	post.save
+<<<<<<< HEAD
   	redirect_to post_path(post.id)
   end
 
@@ -14,7 +15,13 @@ class PostsController < ApplicationController
 
   def show
   	@post = Post.find(params[:id])
+=======
+  	redirect_to '/top'
+
+>>>>>>> fd828088054ec104b4d9561cc43c02ea4bde2424
   end
+
+ 
 
   private
   def post_params
