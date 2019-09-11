@@ -8,9 +8,8 @@ Rails.application.routes.draw do
   post 'posts' => 'posts#create'
 
   get 'posts' =>'posts#index'
-<<<<<<< HEAD
-  
+
   get 'posts/:id' => 'posts#show',as: 'post'
-=======
->>>>>>> fd828088054ec104b4d9561cc43c02ea4bde2424
+
+  get 'posts/:id/edit' => 'posts#edit', as: 'edit_post'
 end
