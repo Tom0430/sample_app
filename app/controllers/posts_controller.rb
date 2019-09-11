@@ -6,7 +6,10 @@ class PostsController < ApplicationController
   	post = Post.new(post_params)
   	post.save
   	redirect_to '/top'
+
   end
+
+ 
 
   private
   def post_params
